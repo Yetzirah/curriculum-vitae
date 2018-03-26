@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style type="text/css">
-      .about-me {
+      #about-me section {
         padding: 20px;
       }    
       .column-50 {
-        display: inline-block;
         width: 49%;
+        display: inline-block;
       }
       .container {
         padding-left: 30%;
         padding-right: 10%;
         width: 60%;
+      }
+      .download {
+        padding: 40px 0;
+        margin-top: 19px;
+        background-color: #FFF;
+      }
+      .icons {
+        font-size: 32px;
+        margin: 0 15px;
       }
       .navigation-menu {
         float: right;
@@ -21,16 +32,44 @@
         width: 10%;
         position: relative;
       }
+      .navigation-menu i {
+        color: #333;
+        font-size: 56px;
+      }
+      .navigation-menu-content {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+      }
+      .large-screen--hide {
+        display: none;
+      }
+      .logo {
+        font-size: 32px;
+        padding-left: 31%;
+      }
       .page-title {
         margin-left: 31%;
+      }
+      .personal-info {
+        margin-left: 25px;
+      }
+      .pic-content {
+        padding: 25px 0;
+      }
+      .pic-content img {
+        border-radius: 50%;
+        max-width: 80%;
       }
       .profile-card {
         float: left;
         width: 30%;
       }
-      .profile-card .profile-card-content {
+      .profile-card-content {
         width: 90%;
         margin: auto;
+        text-align: center;
+        background-color: #c9bedb;
       }
       .profile-card.sticky {
         top: 15px;
@@ -39,33 +78,86 @@
         margin-bottom: 25px;
       }
       .square {
-        border: 1px solid #000;
-        width: 100%;
+        border: 1px solid lightgrey;
+        box-shadow: -4px 7px 15px 1px lightgray;
         min-height: 500px;
       }
       .sticky {
         position: sticky;
         top: 0;
       }
+      @media only screen and (max-width: 768px) {
+          [class*="column-"],
+          .small-screen--one-whole {
+            width: 100%;
+          }
+          .container.small-screen--one-whole {
+            padding: 0;
+          }
+          .profile-card.small-screen--one-whole {
+            float: none;
+            margin-bottom: 25px;
+          }
+          .profile-card.small-screen--one-whole.sticky {
+            position: static;
+          }
+          .small-screen--hide {
+            display: none;
+          }
+      }
     </style>
   </head>
   <body>
     <div>
       <header>
-        <div class="page-title">
-          <h1>Curriculum Vitae</h1>
-          <nav></nav>        
-        </div>
+        <i class="fa fa-leaf logo" aria-hidden="true"></i>
+        <nav role="navigation"></nav>        
       </header>
-      <div class="profile-card sticky">
-        <div class="square profile-card-content"></div>
+      <div class="profile-card sticky small-screen--one-whole">
+        <div class="profile-card-content square small-screen--one-whole">
+          <div class="pic-content">
+            <a href="https://placeholder.com"><img src="http://via.placeholder.com/240x240"></a>
+          </div>
+          <h1>Yetzirah Hadit~</h1>
+          <h3>Software Developer</h3>
+          <div class="social-networks">
+            <i class="fa fa-facebook-square icons" aria-hidden="true"></i>
+            <i class="fa fa-twitter icons" aria-hidden="true"></i>
+            <i class="fa fa-google-plus icons" aria-hidden="true"></i>
+          </div>
+          <div class="download">
+            <button>DOWNLOAD CV</button>
+          </div>
+        </div>
       </div>
-      <div class="navigation-menu sticky">
-        <div class="square"></div>
+      <div class="navigation-menu sticky small-screen--hide">
+        <div class="navigation-menu-content">
+          <a href="#about-me">
+            <i class="fa fa-user-o" aria-hidden="true"></i>
+          </a>
+          <a href="#portfolio">
+            <i class="fa fa-picture-o" aria-hidden="true"></i>
+          </a>
+          <a href="#work-experience">
+            <i class="fa fa-building-o" aria-hidden="true"></i>
+          </a>
+          <a href="#references">
+            <i class="fa fa-commenting-o" aria-hidden="true"></i>
+          </a>
+          <a href="#blog">
+            <i class="fa fa-rss" aria-hidden="true"></i>
+          </a>
+          <a href="#calendar">
+            <i class="fa fa-calendar-o" aria-hidden="true"></i>
+          </a>
+          <a href="#contact-me">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+          </a>
+        </div>
       </div>
-      <main role="main" class="container">
-        <div class="section-container square">
-          <section class="about-me">
+      <main role="main" class="container small-screen--one-whole">
+        <div class="section-container square" id="about-me">
+          <section>
             <div class="section-title">
               <h2> Hello I'm Yetzirah</h2>
             </div>
@@ -74,47 +166,35 @@
               <button>SHARE</button>
             </div>
           </section>
-          <section class="about-me">
-            <row>
-              <div class="column-50">
-                <div class="section-title">
-                  <h2>Personal Information</h2>
-                </div>
-                <div class="section-content">
-                  <row>
-                    <div class="column-50">
-                      <p>FULL NAME</p>
-                      <p>DATE OF BIRTH</p>
-                      <p>ADDRESS</p>
-                      <p>E-MAIL</p>
-                      <p>PHONE</p>
-                    </div>
-                    <div class="column-50">
-                      <p>Yetzirah Hadit De Pena Espejo</p>
-                      <p>16 January 1992</p>
-                      <p>Moca</p>
-                      <p>yetzirahespejo@gmail.com</p>
-                      <p>809-981-1955</p>
-                    </div>
-                  </row>
-                </div>
+          <section>
+            <div class="column-50">
+              <div class="section-title">
+                <h2>Personal Information</h2>
               </div>
-              <div class="column-50">
-                <div class="section-title">
-                  <h2>Languages</h2>
-                </div>
-                <div class="section-content">
-                  <p>Spanish</p>
-                  <p>Native</p>
-                  <p>English</p>
-                  <p>Intermedio</p>
-                  <p>French</p>
-                  <p>Beginner</p>
-                </div>
+              <div class="section-content">
+                <p><span class="title">FULL NAME</span><span class="personal-info">Yetzirah Hadit De Pena Espejo</span></p>
+                <p><span class="title">DATE OF BIRTH</span><span class="personal-info">16 January 1992</span></p>
+                <p><span class="title">ADDRESS</span><span class="personal-info">Moca</span></p>
+                <p><span class="title">E-MAIL</span><span class="personal-info">yetzirahespejo@gmail.com</span></p>
+                <p><span class="title">PHONE</span><span class="personal-info">809-981-1955</span></p>
+                <p><span class="title">PHONE</span><span class="personal-info">809-981-1955</span></p>
               </div>
-            </row>
+            </div>
+            <div class="column-50">
+              <div class="section-title">
+                <h2>Languages</h2>
+              </div>
+              <div class="section-content">
+                <p>Spanish</p>
+                <p>Native</p>
+                <p>English</p>
+                <p>Intermedio</p>
+                <p>French</p>
+                <p>Beginner</p>
+              </div>
+            </div>
           </section>
-          <section class="about-me">
+          <section>
             <row>
               <div class="column-50">
                 <div class="section-title">
@@ -124,6 +204,7 @@
                   <p>Morbi mollis massa orci.</p>
                   <p>Morbi mollis massa orci.</p>
                   <p>Morbi mollis massa orci.</p>
+                  <p>Morbi mollis massa orci.</p>
                 </div>
               </div>
               <div class="column-50">
@@ -136,7 +217,7 @@
               </div>
             </row>
           </section>
-          <section class="about-me">
+          <section>
             <row>
               <div class="column-50">
                 <div class="section-title">
@@ -157,7 +238,7 @@
             </row>
           </section>
         </div>
-        <div class="section-container square">
+        <div class="section-container square" id="portfolio">
           <section>
             <div class="section-title">
               <h2> Hello I'm Yetzirah</h2>
@@ -167,7 +248,7 @@
             </div>
           </section>        
         </div>
-        <div class="section-container square">
+        <div class="section-container square" id="work-experience">
           <section>
             <div class="section-title">
               <h2> Hello I'm Yetzirah</h2>
@@ -177,7 +258,7 @@
             </div>
           </section>        
         </div>
-        <div class="section-container square">
+        <div class="section-container square" id="references">
           <section>
             <div class="section-title">
               <h2> Hello I'm Yetzirah</h2>
@@ -187,7 +268,7 @@
             </div>
           </section>        
         </div>
-        <div class="section-container square">
+        <div class="section-container square" id="blog">
           <section>
             <div class="section-title">
               <h2> Hello I'm Yetzirah</h2>
@@ -197,7 +278,7 @@
             </div>
           </section>        
         </div>
-        <div class="section-container square">
+        <div class="section-container square" id="calendar">
           <section>
             <div class="section-title">
               <h2> Hello I'm Yetzirah</h2>
@@ -207,7 +288,7 @@
             </div>
           </section>          
         </div>
-        <div class="section-container square">
+        <div class="section-container square" id="contact-me">
           <section>
             <div class="section-title">
               <h2> Hello I'm Yetzirah</h2>
@@ -223,4 +304,3 @@
     </div>
   </body>
 </html>
-
