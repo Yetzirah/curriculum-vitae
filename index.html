@@ -3,122 +3,48 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style type="text/css">
-      #about-me section {
-        padding: 20px;
-      }    
-      .column-50 {
-        width: 49%;
-        display: inline-block;
-      }
-      .container {
-        padding-left: 30%;
-        padding-right: 10%;
-        width: 60%;
-      }
-      .download {
-        padding: 40px 0;
-        margin-top: 19px;
-        background-color: #FFF;
-      }
-      .icons {
-        font-size: 32px;
-        margin: 0 15px;
-      }
-      .navigation-menu {
-        float: right;
-        right: 1px;
-        z-index: 4;
-        width: 10%;
-        position: relative;
-      }
-      .navigation-menu i {
-        color: #333;
-        font-size: 56px;
-      }
-      .navigation-menu-content {
-        width: 50%;
-        margin: auto;
-        text-align: center;
-      }
-      .large-screen--hide {
-        display: none;
-      }
-      .logo {
-        font-size: 32px;
-        padding-left: 31%;
-      }
-      .page-title {
-        margin-left: 31%;
-      }
-      .personal-info {
-        margin-left: 25px;
-      }
-      .pic-content {
-        padding: 25px 0;
-      }
-      .pic-content img {
-        border-radius: 50%;
-        max-width: 80%;
-      }
-      .profile-card {
-        float: left;
-        width: 30%;
-      }
-      .profile-card-content {
-        width: 90%;
-        margin: auto;
-        text-align: center;
-        background-color: #c9bedb;
-      }
-      .profile-card.sticky {
-        top: 15px;
-      }
-      .section-container {
-        margin-bottom: 25px;
-      }
-      .square {
-        border: 1px solid lightgrey;
-        box-shadow: -4px 7px 15px 1px lightgray;
-        min-height: 500px;
-      }
-      .sticky {
-        position: sticky;
-        top: 0;
-      }
-      @media only screen and (max-width: 768px) {
-          [class*="column-"],
-          .small-screen--one-whole {
-            width: 100%;
-          }
-          .container.small-screen--one-whole {
-            padding: 0;
-          }
-          .profile-card.small-screen--one-whole {
-            float: none;
-            margin-bottom: 25px;
-          }
-          .profile-card.small-screen--one-whole.sticky {
-            position: static;
-          }
-          .small-screen--hide {
-            display: none;
-          }
-      }
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lato" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Yetzirah's Personal Page - Display professional profile</title>
   </head>
   <body>
     <div>
       <header>
-        <i class="fa fa-leaf logo" aria-hidden="true"></i>
-        <nav role="navigation"></nav>        
+        <div class="page-title-container">
+          <i class="fa fa-leaf logo" aria-hidden="true"></i>
+          <span class="page-title">Personal Page</span>
+        </div>
+        <nav role="navigation">
+          <div class="navigation-menu-mobile">
+            <a href="#about-me" aria-label="About Me">
+              <i class="fa fa-user-o" aria-hidden="true"></i>
+            </a>
+            <a href="#work-experience" aria-label="Work Experience">
+              <i class="fa fa-building-o" aria-hidden="true"></i>
+            </a>
+            <a href="#education" aria-label="Education">
+              <i class="fa fa-book" aria-hidden="true"></i>
+            </a>
+            <a href="#references" aria-label="References">
+             <i class="fa fa-commenting-o" aria-hidden="true"></i>
+            </a>
+            <a href="#github" aria-label="Github">
+              <i class="fa fa-rss" aria-hidden="true"></i>
+            </a>
+            <a href="#contact-me" aria-label="Contact Me">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </a>
+          </div>
+        </nav>        
       </header>
       <div class="profile-card sticky small-screen--one-whole">
-        <div class="profile-card-content square small-screen--one-whole">
-          <div class="pic-content">
-            <a href="https://placeholder.com"><img src="http://via.placeholder.com/240x240"></a>
+        <div class="profile-card-content small-screen--one-whole">
+          <div class="avatar-content">
+            <p class="initials">YH</p>
           </div>
-          <h1>Yetzirah Hadit~</h1>
+          <h1 class="visually-hidden">Yetzirah Hadit Curriculum Vitae</h1>
+          <h2>Yetzirah Hadit~</h2>
           <h3>Software Developer</h3>
           <div class="social-networks">
             <i class="fa fa-facebook-square icons" aria-hidden="true"></i>
@@ -132,38 +58,35 @@
       </div>
       <div class="navigation-menu sticky small-screen--hide">
         <div class="navigation-menu-content">
-          <a href="#about-me">
+          <a href="#about-me" aria-label="About Me">
             <i class="fa fa-user-o" aria-hidden="true"></i>
           </a>
-          <a href="#portfolio">
-            <i class="fa fa-picture-o" aria-hidden="true"></i>
-          </a>
-          <a href="#work-experience">
+          <a href="#work-experience" aria-label="Work Experience">
             <i class="fa fa-building-o" aria-hidden="true"></i>
           </a>
-          <a href="#references">
-            <i class="fa fa-commenting-o" aria-hidden="true"></i>
+          <a href="#education" aria-label="Education">
+            <i class="fa fa-book" aria-hidden="true"></i>
           </a>
-          <a href="#blog">
+          <a href="#references" aria-label="References">
+           <i class="fa fa-commenting-o" aria-hidden="true"></i>
+          </a>
+          <a href="#github" aria-label="Github">
             <i class="fa fa-rss" aria-hidden="true"></i>
           </a>
-          <a href="#calendar">
-            <i class="fa fa-calendar-o" aria-hidden="true"></i>
-          </a>
-          <a href="#contact-me">
+          <a href="#contact-me" aria-label="Contact Me">
             <i class="fa fa-envelope-o" aria-hidden="true"></i>
           </a>
         </div>
       </div>
       <main role="main" class="container small-screen--one-whole">
-        <div class="section-container square" id="about-me">
+        <div class="section-container square about-me" id="about-me" tabindex="-1">
           <section>
             <div class="section-title">
               <h2> Hello I'm Yetzirah</h2>
             </div>
             <div class="section-content">
-              <p>Morbi mollis massa orci, eu rhoncus metus eleifend in. Curabitur rhoncus posuere massa aliquet blandit. Duis erat nulla, accumsan a mollis et, rhoncus et nunc. Phasellus quis lorem mauris. Aliquam pulvinar feugiat elementum. Fusce lobortis enim vel ligula suscipit, et tristique dui sodales. Ut sit amet turpis justo.</p>
-              <button>SHARE</button>
+              <p>I am a Software developer with 2 years of experience in designing and developing web applications and also creating solutions using a popular ecommerce platform named Shopify.</p>
+              <div class="share-button">SHARE</div>
             </div>
           </section>
           <section>
@@ -172,12 +95,12 @@
                 <h2>Personal Information</h2>
               </div>
               <div class="section-content">
-                <p><span class="title">FULL NAME</span><span class="personal-info">Yetzirah Hadit De Pena Espejo</span></p>
+                <p><span class="title">FULL NAME</span><span class="personal-info">Yetzirah Hadit De Peña Espejo</span></p>
                 <p><span class="title">DATE OF BIRTH</span><span class="personal-info">16 January 1992</span></p>
                 <p><span class="title">ADDRESS</span><span class="personal-info">Moca</span></p>
                 <p><span class="title">E-MAIL</span><span class="personal-info">yetzirahespejo@gmail.com</span></p>
-                <p><span class="title">PHONE</span><span class="personal-info">809-981-1955</span></p>
-                <p><span class="title">PHONE</span><span class="personal-info">809-981-1955</span></p>
+                <p><span class="title">CELLPHONE NUMBER</span><span class="personal-info">809-981-1955</span></p>
+                <p><span class="title">HOME NUMBER</span><span class="personal-info">809-577-7521</span></p>
               </div>
             </div>
             <div class="column-50">
@@ -186,12 +109,18 @@
               </div>
               <div class="section-content">
                 <p>Spanish</p>
-                <p>Native</p>
+                  <div class="bar">
+                    <span style="width: 100%"></span>
+                  </div>
                 <p>English</p>
-                <p>Intermedio</p>
-                <p>French</p>
-                <p>Beginner</p>
-              </div>
+                  <div class="bar">
+                    <span style="width: 75%"></span>
+                  </div>                
+                  <p>French</p>
+                  <div class="bar">
+                    <span style="width: 15%"></span>
+                  </div>    
+             </div>
             </div>
           </section>
           <section>
@@ -201,18 +130,37 @@
                   <h2>Profesional skills</h2>
                 </div>
                 <div class="section-content">
-                  <p>Morbi mollis massa orci.</p>
-                  <p>Morbi mollis massa orci.</p>
-                  <p>Morbi mollis massa orci.</p>
-                  <p>Morbi mollis massa orci.</p>
+                  <p>REST API</p>
+                  <div class="bar slim-bar">
+                    <span style="width: 85%"></span>
+                  </div>           
+                  <p>Node JS</p>
+                  <div class="bar slim-bar">
+                    <span style="width: 75%"></span>
+                  </div>  
+                  <p>Database Design</p>
+                  <div class="bar slim-bar">
+                    <span style="width: 65%"></span>
+                  </div>                     
                 </div>
               </div>
               <div class="column-50">
                 <div class="section-title">
-                  <h2> Hello I'm Yetzirah</h2>
+                  <h2>Aditional Skills</h2>
                 </div>
                 <div class="section-content">
-                  <p>Morbi mollis massa orci, eu rhoncus metus eleifend in. Curabitur rhoncus posuere massa aliquet blandit. Duis erat nulla, accumsan a mollis et, rhoncus et nunc. Phasellus quis lorem mauris. Aliquam pulvinar feugiat elementum. Fusce lobortis enim vel ligula suscipit, et tristique dui sodales. Ut sit amet turpis justo.</p>
+                  <p>HTML</p>
+                  <div class="bar slim-bar">
+                    <span style="width: 100%"></span>
+                  </div>
+                  <p>CSS</p>
+                  <div class="bar slim-bar">
+                    <span style="width: 100%"></span>
+                  </div>                
+                  <p>Shopify - Ecommerce platform</p>
+                  <div class="bar slim-bar">
+                    <span style="width: 80%"></span>
+                  </div>                  
                 </div>
               </div>
             </row>
@@ -221,80 +169,225 @@
             <row>
               <div class="column-50">
                 <div class="section-title">
-                  <h2> Hello I'm Yetzirah</h2>
+                  <h2>Personal Skills</h2>
                 </div>
-                <div class="section-content">
-                  <p>Morbi mollis massa orci, eu rhoncus metus eleifend in. Curabitur rhoncus posuere massa aliquet blandit. Duis erat nulla, accumsan a mollis et, rhoncus et nunc. Phasellus quis lorem mauris. Aliquam pulvinar feugiat elementum. Fusce lobortis enim vel ligula suscipit, et tristique dui sodales. Ut sit amet turpis justo.</p>
+                <div class="section-content soft-skills">
+                  <p>Problem Solving</p>
+                  <p>Critical Thinking</p>
+                  <p>Time Management</p>
+                  <p>Organizational</p>
+                  <p>Active Listening</p>
                 </div>
               </div>
               <div class="column-50">
                 <div class="section-title">
-                  <h2> Hello I'm Yetzirah</h2>
+                  <h2>Teamwork</h2>
                 </div>
-                <div class="section-content">
-                  <p>Morbi mollis massa orci, eu rhoncus metus eleifend in. Curabitur rhoncus posuere massa aliquet blandit. Duis erat nulla, accumsan a mollis et, rhoncus et nunc. Phasellus quis lorem mauris. Aliquam pulvinar feugiat elementum. Fusce lobortis enim vel ligula suscipit, et tristique dui sodales. Ut sit amet turpis justo.</p>
+                <div class="section-content soft-skills">
+                  <p>Collaboration</p>
+                  <p>Team Building</p>
+                  <p>Conflict Management</p>
+                  <p>Mentoring</p>
+                  <p>Accept feedback</p>
                 </div>
               </div>
             </row>
           </section>
         </div>
-        <div class="section-container square" id="portfolio">
+        <div class="section-container square work-experience" id="work-experience" tabindex="-1">
           <section>
             <div class="section-title">
-              <h2> Hello I'm Yetzirah</h2>
+              <h2>Work Experience</h2>
             </div>
             <div class="section-content">
-              <p>Morbi mollis massa orci, eu rhoncus metus eleifend in. Curabitur rhoncus posuere massa aliquet blandit. Duis erat nulla, accumsan a mollis et, rhoncus et nunc. Phasellus quis lorem mauris. Aliquam pulvinar feugiat elementum. Fusce lobortis enim vel ligula suscipit, et tristique dui sodales. Ut sit amet turpis justo.</p>
+              <div class="column-50">
+                <h2>June 2016 - Current</h2>
+              </div>
+              <div class="column-50">
+                <p>
+                  <span class="position-title">Software Developer</span>
+                  <br>
+                  <span class="company">Intellisys</span>
+                  <br>
+                  Responsible for the development and maintenance of applications in accordance with best practices, in order to meet the needs of customers.
+                  Build data models that meet the requirements of the application.
+                  Detection and correction of errors.
+                </p>                           
+              </div>
+              <div class="column-50">
+                <h2>Sept. 2014 - June 2016</h2>
+              </div>
+              <div class="column-50">
+                <p>
+                  <span class="position-title">Programmer, Dept. of Projects of Industrial Automation</span>
+                  <br>
+                  <span class="company">Control Engineering</span>
+                  <br>
+                  Responsible for the design of human machine interface, HMI.
+                  Installation and Calibration of Industrial Sensors.
+                  Programming of PLCs.
+                  Programming of energy monitors and communication gateways.
+                  Detection and correction of errors.
+                </p>            
+              </div> 
+              <div class="column-50">
+                <h2>April 2014 - July 2014</h2>
+              </div>
+              <div class="column-50">
+                <p>
+                  <span class="position-title">Intern in the Area of Electronic Maintenance</span>
+                  <br>
+                  <span class="company">Cementos Cibao</span>
+                  <br>
+                  Responsible for the design and update of the Human Machine Interface, HMI.
+                  Installation and Calibration of Industrial Sensors.
+                  Maintenance of industrial control equipment and process monitoring.
+                  Programming of PLCs.
+                </p>    
+              </div>
             </div>
           </section>        
         </div>
-        <div class="section-container square" id="work-experience">
+        <div class="section-container square education" id="education" tabindex="-1">
           <section>
             <div class="section-title">
-              <h2> Hello I'm Yetzirah</h2>
+              <h2>Education</h2>
             </div>
             <div class="section-content">
-              <p>Morbi mollis massa orci, eu rhoncus metus eleifend in. Curabitur rhoncus posuere massa aliquet blandit. Duis erat nulla, accumsan a mollis et, rhoncus et nunc. Phasellus quis lorem mauris. Aliquam pulvinar feugiat elementum. Fusce lobortis enim vel ligula suscipit, et tristique dui sodales. Ut sit amet turpis justo.</p>
+              <div class="column-50">
+                <h2>2015</h2>
+              </div>
+              <div class="column-50">
+                <p>Universidad Tecnológica de Santiago<br>Electronic Engineering</p>              
+              </div>
+              <div class="column-50">
+                <h2>2009</h2>
+              </div>
+              <div class="column-50">
+                <p>Colegio Utesiano de Estudios Integrados<br>Technical bachelor in Business Administration and Commerce. Accounting and administrative management</p>              
+              </div> 
+            </div>
+            <div class="section-title">
+              <h2>Other Courses</h2>
+            </div>
+            <div class="section-content">
+              <div class="column-50">
+                <h2>2016</h2>
+              </div>
+              <div class="column-50">
+                <p>Coursera. University of California, Irvine &amp; Tecnológico de Monterrey<br>Project Management: Basic Principles</p>                           
+              </div>              
+              <div class="column-50">
+                <h2>2015</h2>
+              </div>
+              <div class="column-50">
+                <p>Instituto Tecnológico de Las Americas , ITLA<br>Certified in Database Design</p>                         
+              </div>
+              <div class="column-50">
+                <h2>2014</h2>
+              </div>
+              <div class="column-50">
+                <p>Instituto Tecnológico de Las Americas , ITLA<br>CCNA: Cisco Certified Network Associate</p>
+              </div>
+            </div>
+          </section>        
+        </div>        
+        <div class="section-container square references" id="references" tabindex="-1">
+          <section>
+            <div class="section-title">
+              <h2>References</h2>
+            </div>
+            <div class="section-content">
+              <div>
+                <div class="avatar-content column-40">
+                  <p class="initials">ME</p>
+                </div>
+                <div class="column-60">
+                  <h2>Martha Espejo</h2>
+                  <p>Loan manager, Banreservas<br>829-761-9390/809-331-6886</p>
+                </div>
+              </div>     
+              <div>
+                <div class="avatar-content column-40">
+                  <p class="initials">LB</p>
+                </div>
+                <div class="column-60">
+                  <h2>Luciano Beato</h2>
+                  <p>Teacher at Universidad Tecnológica de Santiago (UTESA)<br>809-275-6354/809-348-9133</p>
+                </div>
+              </div>  
+              <div>
+                <div class="avatar-content column-40">
+                  <p class="initials">ID</p>
+                </div>
+                <div class="column-60">
+                  <h2>Irvin De la Cruz</h2>
+                  <p>Engineer, Philip Morris.<br>809-928-8758</p>
+                </div>
+              </div> 
+              <div>
+                <div class="avatar-content column-40">
+                  <p class="initials">ER</p>
+                </div>
+                <div class="column-60">
+                  <h2>Estarlin T. Rosa Acevedo</h2>
+                  <p>IT Instructor, ITLA<br>809-971-4852</p>
+                </div>
+              </div> 
+              <div>
+                <div class="avatar-content column-40">
+                  <p class="initials">RG</p>
+                </div>
+                <div class="column-60">
+                  <h2>Rigoberto González</h2>
+                  <p>Engineer, Falcondo.<br>849-817-7135</p>
+                </div>
+              </div> 
+              <div>
+                <div class="avatar-content column-40">
+                  <p class="initials">CC</p>
+                </div>
+                <div class="column-60">
+                  <h2>Carlos Cabreja</h2>
+                  <p>Engineer, Control Engineering<br>809-949-2636</p>
+                </div>
+              </div>               
             </div>
           </section>        
         </div>
-        <div class="section-container square" id="references">
+        <div class="section-container square github" id="github" tabindex="-1">
           <section>
             <div class="section-title">
-              <h2> Hello I'm Yetzirah</h2>
+              <h2>Code</h2>
             </div>
             <div class="section-content">
-              <p>Morbi mollis massa orci, eu rhoncus metus eleifend in. Curabitur rhoncus posuere massa aliquet blandit. Duis erat nulla, accumsan a mollis et, rhoncus et nunc. Phasellus quis lorem mauris. Aliquam pulvinar feugiat elementum. Fusce lobortis enim vel ligula suscipit, et tristique dui sodales. Ut sit amet turpis justo.</p>
+              <p>For those who are interested in take a look of my work, please click on the button below in that way you will be redirected to my GitHub where you will see a few of my personal projects. if you see something that can I implement to improve my code feel free to open a pull request for this.</p>
+              <button>Check out my github</button>
             </div>
           </section>        
         </div>
-        <div class="section-container square" id="blog">
+        <div class="section-container square contact-me" id="contact-me" tabindex="-1">
           <section>
             <div class="section-title">
-              <h2> Hello I'm Yetzirah</h2>
+              <h2>Contact Me</h2>
             </div>
             <div class="section-content">
-              <p>Morbi mollis massa orci, eu rhoncus metus eleifend in. Curabitur rhoncus posuere massa aliquet blandit. Duis erat nulla, accumsan a mollis et, rhoncus et nunc. Phasellus quis lorem mauris. Aliquam pulvinar feugiat elementum. Fusce lobortis enim vel ligula suscipit, et tristique dui sodales. Ut sit amet turpis justo.</p>
-            </div>
-          </section>        
-        </div>
-        <div class="section-container square" id="calendar">
-          <section>
-            <div class="section-title">
-              <h2> Hello I'm Yetzirah</h2>
-            </div>
-            <div class="section-content">
-              <p>Morbi mollis massa orci, eu rhoncus metus eleifend in. Curabitur rhoncus posuere massa aliquet blandit. Duis erat nulla, accumsan a mollis et, rhoncus et nunc. Phasellus quis lorem mauris. Aliquam pulvinar feugiat elementum. Fusce lobortis enim vel ligula suscipit, et tristique dui sodales. Ut sit amet turpis justo.</p>
-            </div>
-          </section>          
-        </div>
-        <div class="section-container square" id="contact-me">
-          <section>
-            <div class="section-title">
-              <h2> Hello I'm Yetzirah</h2>
-            </div>
-            <div class="section-content">
-              <p>Morbi mollis massa orci, eu rhoncus metus eleifend in. Curabitur rhoncus posuere massa aliquet blandit. Duis erat nulla, accumsan a mollis et, rhoncus et nunc. Phasellus quis lorem mauris. Aliquam pulvinar feugiat elementum. Fusce lobortis enim vel ligula suscipit, et tristique dui sodales. Ut sit amet turpis justo.</p>
+              <div class="social-networks">
+                <i class="fa fa-facebook-square icons" aria-hidden="true"></i>
+                <i class="fa fa-twitter icons" aria-hidden="true"></i>
+                <i class="fa fa-google-plus icons" aria-hidden="true"></i>
+              </div>
+              <h4>Fell free to contact me in case of any question</h4>
+              <form>
+                <label for="name" id="label-name">Your Name:</label>
+                <input id="name" name="name" aria-labelledby="label-name" type="text" aria-required="true" required>
+                <label for="email" id="label-email">Your Email:</label>
+                <input id="email" name="email" aria-labelledby="label-email" type="text" aria-required="true" required>
+                <label for="subject" id="label-subject">Subject:</label>
+                <input id="subject" name="subject" aria-labelledby="label-subject" type="text" aria-required="true" required>
+                <label for="message" id="label-message">Your Message:</label>
+                <input id="message" name="message" aria-labelledby="label-message" type="text" aria-required="true" required>
+              </form>
             </div>
           </section>
         </div>      
