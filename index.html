@@ -2,10 +2,12 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lato" rel="stylesheet">   
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="site.js" type="text/javascript"></script>
     <title>Yetzirah's Personal Page - Display professional profile</title>
   </head>
   <body>
@@ -47,12 +49,26 @@
           <h2>Yetzirah Hadit~</h2>
           <h3>Software Developer</h3>
           <div class="social-networks">
-            <i class="fa fa-facebook-square icons" aria-hidden="true"></i>
-            <i class="fa fa-twitter icons" aria-hidden="true"></i>
-            <i class="fa fa-google-plus icons" aria-hidden="true"></i>
+            <ul class="inline-list">
+              <li>
+                <a href="https://www.facebook.com/yetzirahdp"  target="_blank" aria-label="facebook-user">
+                  <i class="fa fa-facebook-square icons" aria-hidden="true"></i>
+                </a>                
+              </li>
+              <li>
+                <a href="https://twitter.com/yetzirah_dp"  target="_blank" aria-label="twitter-user">
+                  <i class="fa fa-twitter icons" aria-hidden="true"></i>
+                </a>                
+              </li>
+              <li>
+                <a href="https://www.instagram.com/yetzirah_dp"  target="_blank" aria-label="instagram-user">
+                  <i class="fa fa-instagram icons" aria-hidden="true"></i>
+                </a>                
+              </li>                           
+            </ul>
           </div>
           <div class="download">
-            <button>DOWNLOAD CV</button>
+            <a href="./downloads/github_io.pdf" target="_blank">DOWNLOAD CV</a>
           </div>
         </div>
       </div>
@@ -86,7 +102,33 @@
             </div>
             <div class="section-content">
               <p>I am a Software developer with 2 years of experience in designing and developing web applications and also creating solutions using a popular ecommerce platform named Shopify.</p>
-              <div class="share-button">SHARE</div>
+              <div class="share-section">
+                <button onclick="showShareButtons()" class="share-options">SHARE</button>
+                <div class="share-button-container" style="display: none;">
+                  <ul class="inline-list">
+                    <li>
+                      <a href="http://twitter.com/share?url=https://yetzirah.github.io/curriculum-vitae/&text=Hey! take a look at this resume:" target="_blank" class="share-button twitter">
+                          <i class="fa fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://plus.google.com/share?url=https://yetzirah.github.io/curriculum-vitae/" target="_blank" class="share-button google-plus">
+                          <i class="fa fa-google-plus"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="http://www.facebook.com/sharer/sharer.php?u=https://yetzirah.github.io/curriculum-vitae/" target="_blank" class="share-button facebook">
+                          <i class="fa fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="http://www.linkedin.com/shareArticle?url=https://yetzirah.github.io/curriculum-vitae/&title=''&summary=''&source=''" target="_blank" class="share-button linkedin">
+                          <i class="fa fa-linkedin"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </section>
           <section>
@@ -362,7 +404,7 @@
             </div>
             <div class="section-content">
               <p>For those who are interested in take a look of my work, please click on the button below in that way you will be redirected to my GitHub where you will see a few of my personal projects. if you see something that can I implement to improve my code feel free to open a pull request for this.</p>
-              <button>Check out my github</button>
+              <a href="https://github.com/Yetzirah" target="_blank" aria-label="github-user">Check out my github</a>
             </div>
           </section>        
         </div>
@@ -373,12 +415,26 @@
             </div>
             <div class="section-content">
               <div class="social-networks">
-                <i class="fa fa-facebook-square icons" aria-hidden="true"></i>
-                <i class="fa fa-twitter icons" aria-hidden="true"></i>
-                <i class="fa fa-google-plus icons" aria-hidden="true"></i>
+                <ul class="inline-list">
+                  <li>
+                    <a href="https://www.facebook.com/yetzirahdp"  target="_blank" aria-label="facebook-user">
+                      <i class="fa fa-facebook-square icons" aria-hidden="true"></i>
+                    </a>                
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/yetzirah_dp"  target="_blank" aria-label="twitter-user">
+                      <i class="fa fa-twitter icons" aria-hidden="true"></i>
+                    </a>                
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/yetzirah_dp"  target="_blank" aria-label="instagram-user">
+                      <i class="fa fa-instagram icons" aria-hidden="true"></i>
+                    </a>                
+                  </li>                           
+                </ul>
               </div>
               <h4>Fell free to contact me in case of any question</h4>
-              <form>
+              <form action="mailto:yetzirahespejo@gmail.com" method="post" enctype="text/plain">
                 <label for="name" id="label-name">Your Name:</label>
                 <input id="name" name="name" aria-labelledby="label-name" type="text" aria-required="true" required>
                 <label for="email" id="label-email">Your Email:</label>
@@ -386,7 +442,8 @@
                 <label for="subject" id="label-subject">Subject:</label>
                 <input id="subject" name="subject" aria-labelledby="label-subject" type="text" aria-required="true" required>
                 <label for="message" id="label-message">Your Message:</label>
-                <input id="message" name="message" aria-labelledby="label-message" type="text" aria-required="true" required>
+                <textarea id="message" name="message" align="top" aria-labelledby="label-message" type="text" aria-required="true" required></textarea>
+                <input type="submit" value="Send" class=submit-button>
               </form>
             </div>
           </section>
